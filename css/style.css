@@ -1,0 +1,332 @@
+/*-========================================-global-style-for-ol-browsers-========================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    outline: none!important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+}
+
+button, a {
+    cursor: pointer;
+    text-decoration: none!important;
+    border: 0;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.container {
+    max-width: 1760px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*==================Header===============*/
+
+header {
+    height: 100vh;
+    background-image: url('../img/Header-bg.jpg');
+    background-size: cover;
+    background-position: top left;
+    padding: 25px 0 50px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content {
+    max-width: 580px;
+    width: 100%;
+}
+
+.Logo {
+    max-width: 250px;
+    width: 100%;
+    height: 140px;
+}
+
+.menu-link {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #333432;
+}
+
+.menu {
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.menu-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.lenguage-link {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 22px;
+    color: #000;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: 15px;
+}
+.down-arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 90px;
+}
+
+.social img {
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+/*=============Mobile menu===============*/
+
+.toggle {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.toggle span {
+    width: 20px;
+    height: 2px;
+    background: #fed317;
+    -webkit-box-shadow: 0px 0px 23px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px -2px rgba(0,0,0,0.75);
+}
+
+.header-content {
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/*==============Coming Soon===============*/
+
+.coming-soon {
+    background-image: url('../img/cominsoon-bg.jpg');
+    background-size: cover;
+    background-position: top left;
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding: 25px 0 50px;
+    position: relative;
+}
+
+.social a img {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 23px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px -2px rgba(0,0,0,0.75);
+}
+
+/*============shutov==========*/
+
+.soon-container {
+    display: flex;
+    /* border: 1px solid #000; */
+    height: 100%;
+    justify-content: center;
+    /* align-items: center */
+}
+
+.soon-container h1 {
+    font-size: 60px;
+    color: #fed317;
+}
+
+/*============media query============*/
+
+
+
+
+
+@media (max-width: 1450px) {
+    .social a img {
+        height: 40px;
+        width: 40px;
+    }
+    /* .social {
+        max-width: 220px;
+    } */
+    .menu-link {
+        font-size: 25px;
+    }
+    .menu {
+        max-width: 530px;
+    }
+    .menu-block {
+        max-width: 530px;
+    }
+    .down-arrow {
+        max-width: 55px;
+    }
+}
+
+@media(max-width: 992px) {
+    .menu::after {
+        display: none;
+    }
+    .Logo {
+        margin-left: 0;
+        width: 150px;
+        height: 50px;
+    }
+    .menu, .menu-block {
+        flex-direction: column;
+        max-width: unset;
+        width: unset;
+        align-items: flex-end;
+    }
+    .social {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    .social img {
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    .social a {
+        margin-bottom: 25px;
+        width: 30px;
+        height: 30px;
+    }
+    .header-content {
+        position: absolute;
+        top: 100px;
+        height: 0;
+        overflow: hidden;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+    .open_menu {
+        height: 335px;
+    }
+    .header-content {
+        max-width: unset;
+        right: 15px; 
+    }
+    header {
+        background-position: 43% 50%;
+    }
+    .coming-soon {
+        background-position: 25% 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-link {
+        font-size: 18px;
+    }
+    /* .social {
+        max-width: 83px;
+    } */
+    .social a {
+        width: 32px;
+        height: 32px;
+    }
+    .social a img {
+        height: 29px;
+        width: 29px;
+    }
+    img {
+        max-width: 90%;
+    }
+    .header-content {
+        top: 140px;
+    }
+
+}
+
+/*==========display=========*/
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
